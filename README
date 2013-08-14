@@ -1,0 +1,3 @@
+Welcome to bootcamp, solider of code. Ready your keys and focus your mind.
+
+This repository is a central place for instructive series of lessons and their accompanying code. Inside each directory (more will be made, we're starting with Haskell) will be a "slides" directory, split up by week. Students can read the slides raw if they want, but a sane man would recommend compiling them with pdflatex first. Even then, it's recommended that you watch the videos, as the slides are simply supplementary information to organize each week's lesson.
