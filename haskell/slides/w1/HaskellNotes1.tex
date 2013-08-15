@@ -1,0 +1,61 @@
+\documentclass{beamer}
+
+\usepackage{listings}
+\lstset{language=Haskell}
+
+\begin{document}
+\title{Introduction to Functional Programming with Haskell - Part 1}
+\author{Norton Jenkins}
+\date{\today}
+\frame{\titlepage}
+
+\frame{\frametitle{Table of Contents}\tableofcontents}
+
+\section{Why Haskell?}
+\frame{\frametitle{Why haskell?}
+  \begin{itemize}
+  \item Fully-featured static type system with inference.\pause
+    \item Lazy Evaluation (sometimes a burden!)\pause
+    \item Interactive development\pause
+    \item Large ecosystem\pause
+    \item Growing Popularity\pause
+    \item High-level abstractions (e.g list comprehensions)\pause
+    \item Merits of functional programming (impure vs pure),(mutable vs immutable)
+  \end{itemize}
+}
+
+\section{Installing Haskell}
+\subsection{On Linux}
+\frame{\frametitle{Installing Haskell on Linux}
+ The package used to run, make, and develop Haskell programs is ``ghc''. Installing ghc from your package manager should be enough.
+  \begin{description}
+  \item[Ubuntu/Debian] \lstinline!sudo apt-get install ghc!
+  \item[Fedora/RHEL] \lstinline!sudo yum install ghc!
+  \item[Opensuse] \lstinline!sudo zypper install ghc!
+  \item[Gentoo] \lstinline!sudo emerge ghc!
+  \item[Arch] \lstinline!sudo pacman -S ghc!
+  \end{description}
+}
+
+\subsection{On Windows}
+\frame{\frametitle{Installing Haskell on Windows}
+You can install the entire Haskell platform on Windows from \href{http://www.haskell.org/platform/}{The Haskell Platform Website}. This will install tools like Cabal, which must be installed seperately through most package managers on Linux.
+}
+
+\section{ghci}
+\frame{\frametitle{ghci - Interactive Development}
+\begin{itemize}
+\item Interprets Haskell statements on-the-fly.\pause
+\item Similar to ``clisp'' for Lisp, ``python'' for Python, ``lein repl'' for Clojure, etc.\pause
+\item Advanced capabilities such as loading sources and debugging built in.\pause
+\item Easy way to type-check using type inference, or test one function to make sure it works.
+\end{itemize}
+}
+\subsection{Hello World}
+\frame{\frametitle{Hello Worlds in Haskell}
+\begin{itemize}
+\item 2 implementations, 1 pure one impure.\pause
+\item impure in {\bf main} function with do block.
+\end{itemize}
+}
+\end{document}

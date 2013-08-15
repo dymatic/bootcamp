@@ -1,0 +1,15 @@
+\documentclass{beamer}
+\begin{document}
+\title{Introduction to Functional Programming with Haskell - Part 2}
+\author{Norton Jenkins}
+\date{\today}
+\frame{\titlepage}
+
+\frame{\frametitle{Table of Contents}\tableofcontents}
+\section*{Data in Haskell}
+\frame{\frametitle{Data in Haskell}
+  \begin{itemize}
+  \item 
+  \end{itemize}
+}
+\end{document}

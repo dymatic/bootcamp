@@ -1,0 +1,33 @@
+\beamer@endinputifotherversion {3.10pt}
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\sectionentry {1}{Data in Haskell}{3}{Data in Haskell}{0}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\slideentry {1}{0}{3}{3/6}{}{0}}
+\headcommand {\beamer@framepages {3}{6}}
+\headcommand {\sectionentry {2}{Higher-level data}{7}{Higher-level data}{0}}
+\headcommand {\beamer@sectionpages {3}{6}}
+\headcommand {\beamer@subsectionpages {3}{6}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{7}{Lists}}\headcommand {\beamer@subsectionpages {7}{6}}
+\headcommand {\slideentry {2}{1}{1}{7/10}{Lists}{0}}
+\headcommand {\beamer@framepages {7}{10}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{11}{Tupples}}\headcommand {\beamer@subsectionpages {7}{10}}
+\headcommand {\slideentry {2}{2}{1}{11/11}{Tupples}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\sectionentry {3}{Pattern Matching}{12}{Pattern Matching}{0}}
+\headcommand {\beamer@sectionpages {7}{11}}
+\headcommand {\beamer@subsectionpages {11}{11}}
+\headcommand {\slideentry {3}{0}{2}{12/17}{}{0}}
+\headcommand {\beamer@framepages {12}{17}}
+\headcommand {\slideentry {3}{0}{3}{18/19}{}{0}}
+\headcommand {\beamer@framepages {18}{19}}
+\headcommand {\slideentry {3}{0}{4}{20/22}{}{0}}
+\headcommand {\beamer@framepages {20}{22}}
+\headcommand {\beamer@partpages {1}{22}}
+\headcommand {\beamer@subsectionpages {12}{22}}
+\headcommand {\beamer@sectionpages {12}{22}}
+\headcommand {\beamer@documentpages {22}}
+\headcommand {\def \inserttotalframenumber {8}}

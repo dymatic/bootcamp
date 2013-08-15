@@ -1,0 +1,30 @@
+Video 1:
+Installing
+ghci
+Hello World!
+
+Video 2 (kind of long):
+Lists
+Mapping
+Filtering
+Pattern matching in functions
+Pattern matching on lists
+General Pattern matching (case)
+
+Video 2.5:
+Sugar (guards, list comprehensions)
+Types (for lists and tupples, too)
+Function type signatures and easy definitions
+
+Video 3:
+Recursive thinking with lots of problems
+Higher Order Functions
+Partial Application
+
+Video 4: 
+IO Monad and files with a flashcard reader for an example. Also make a small thing for copying files as you would with ctrl+click in a file manager.
+
+Video 5: Packaging, etc.
+Literative Haskell
+Debugging
+make

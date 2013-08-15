@@ -1,0 +1,89 @@
+\documentclass{beamer}
+
+\usepackage{listings}
+
+\usecolortheme{beaver}
+
+\begin{document}
+\lstset{language=haskell}
+
+\title{Introduction to Functional Programming with Haskell - Part 2}
+\author{Norton Jenkins}
+\date{\today}
+\frame{\titlepage}
+
+\frame{\frametitle{Table of Contents}\tableofcontents}
+\section*{Data in Haskell}
+\frame{\frametitle{Data in Haskell}
+  \begin{itemize}
+  \item Data has a different Type\pause
+  \item Int and Char are the most common.\pause
+  \item Data can be abstracted into Tupples and lists\pause
+  \item Typeclasses are interfaces for similar data. 
+  \end{itemize}
+}
+
+\section{Higher-level data}
+\subsection{Lists}
+\frame{\frametitle{Working with lists}
+  \begin{itemize}
+  \item Lists collect data of the same type.\pause
+  \item Comprehensions allow you to filter lists to your liking.\pause
+  \item Mapping over lists returns a list of data with a function applied to it.\pause
+  \item The notation [Type] creates a list. [Bool] is a list of booleans.
+  \end{itemize}
+}
+
+\subsection{Tupples}
+\frame{\frametitle{Working with Tupples}
+  \begin{itemize}
+  \item Tupples ``types'' are determined by the number of elemnts they have, and what types are in what location.
+  \item (Int,Char) is a valid tupple.
+  \end{itemize}
+}
+
+\section{Pattern Matching}
+
+\frame{\frametitle{Pattern matching}
+  \begin{itemize}
+    \item Any data can be pattern matched.\pause
+    \item Asks ``Does the data look like this?''\pause
+    \item The list [1,2] is syntax sugar for 1:2\pause
+    \item The pattern (x:xs:[]) matches 1 is then bound to x, 2 to c, and they are indeed appended to an empty list, so the match completes.\pause
+    \item (a,b) = (1,2). You now have two variables. a that is 1, b that is 2.\pause
+    \item (a:b:\_) = [1,2]. This will bind variables the same as above.
+  \end{itemize}
+}
+
+\begin{frame}[fragile]
+  \frametitle{Pattern Matching by value}
+  \begin{itemize}
+  \item Take this function: isThisNumberZero x = if x == 0 then True else False\pause
+  \end{itemize}
+  This can be written as:
+  \begin{lstlisting}
+    isThisNumber0 0 = True
+    isThisNumber0 _ = False
+  \end{lstlisting} 
+  \begin{itemize}
+  \item If x is 0, it returns True. If it is ABSOLUTELY ANYTHING ELSE (special underscrore sugar) it returns False.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Pattern Matching outside of Functions}
+  \begin{itemize}
+  \item Everything in Haskell returns a value.\pause
+  \item Inline pattern matching is no exception. Use the {\bf case} keyword.\pause
+  \end{itemize}
+
+  \begin{lstlisting}
+    let y = [1,2] in let x = case y of
+                                   []     -> 0
+                                   [x]    -> 1
+                                   (x:xs) -> 2
+  \end{lstlisting}
+  
+  The above code makes a variable y equal to [1,2]. It's pointless to check, but if y is empty, x becomes 0. If it has one element [x] it becomes 1. Otherwise, it will become 2 as long as it has two elements.
+\end{frame}
+\end{document}

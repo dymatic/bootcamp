@@ -1,0 +1,14 @@
+\frametitle {Pattern Matching outside of Functions}
+  \begin{itemize}
+  \item Everything in Haskell returns a value.\pause
+  \item Inline pattern matching is no exception. Use the {\bf case} keyword.\pause
+  \end{itemize}
+
+  \begin{lstlisting}
+    let y = [1,2] in let x = case y of
+                                   []     -> 0
+                                   [x]    -> 1
+                                   (x:xs) -> 2
+  \end{lstlisting}
+
+  The above code makes a variable y equal to [1,2]. It's pointless to check, but if y is empty, x becomes 0. If it has one element [x] it becomes 1. Otherwise, it will become 2 as long as it has two elements.
